@@ -1,0 +1,15 @@
+lists.lists:
+  path: '/lists/{action}'
+  defaults:
+    _controller: '\Drupal\lists\Controller\ListsController::lists'
+    _title: 'Lists'
+  requirements:
+    _permission: 'access content'
+
+lists.extendedlists:
+  path: '/lists/{action}/{subaction}'
+  defaults:
+    _controller: '\Drupal\lists\Controller\ListsController::extendedlists'
+    _title: 'Lists'
+  requirements:
+    _permission: 'access content'
